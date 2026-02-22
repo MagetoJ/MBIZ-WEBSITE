@@ -1,9 +1,13 @@
 'use client'
 
+import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
 export function Hero() {
+  const t = useTranslations('hero')
+
   return (
     <section className="w-full py-20 md:py-32 bg-gradient-to-b from-background to-secondary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,42 +16,44 @@ export function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="inline-block px-3 py-1 bg-accent/20 rounded-full text-sm text-accent-foreground">
-                ✨ Trusted by 5,000+ Kenyan Businesses
+                {t('badge')}
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-foreground text-balance">
-                Manage Your Shop with Confidence
+                {t('title')}
               </h1>
               <p className="text-lg text-muted-foreground max-w-xl text-balance">
-                mBiz is your all-in-one digital business manager. Track inventory, manage sales, and build customer relationships effortlessly.
+                {t('description')}
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Start Free Trial
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
+              <Link href="https://mbizapp.com/register">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  {t('cta_primary')}
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary">
-                Watch Demo
+                {t('cta_secondary')}
               </Button>
             </div>
 
             {/* Trust Indicators */}
             <div className="flex items-center gap-6 pt-4">
               <div className="text-center">
-                <p className="text-2xl font-bold text-primary">5,000+</p>
-                <p className="text-sm text-muted-foreground">Active Users</p>
+                <p className="text-2xl font-bold text-primary">{t('users_count')}</p>
+                <p className="text-sm text-muted-foreground">{t('active_users')}</p>
               </div>
               <div className="h-8 w-px bg-border"></div>
               <div className="text-center">
-                <p className="text-2xl font-bold text-primary">98%</p>
-                <p className="text-sm text-muted-foreground">Satisfaction Rate</p>
+                <p className="text-2xl font-bold text-primary">{t('satisfaction_rate')}</p>
+                <p className="text-sm text-muted-foreground">{t('satisfaction')}</p>
               </div>
               <div className="h-8 w-px bg-border"></div>
               <div className="text-center">
-                <p className="text-2xl font-bold text-primary">24/7</p>
-                <p className="text-sm text-muted-foreground">Support</p>
+                <p className="text-2xl font-bold text-primary">{t('support_hours')}</p>
+                <p className="text-sm text-muted-foreground">{t('support')}</p>
               </div>
             </div>
           </div>
@@ -60,7 +66,7 @@ export function Hero() {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                   <div className="w-8 h-8 bg-primary rounded-lg"></div>
                 </div>
-                <p className="text-sm text-muted-foreground">Dashboard Preview</p>
+                <p className="text-sm text-muted-foreground">{t('preview')}</p>
               </div>
             </div>
           </div>

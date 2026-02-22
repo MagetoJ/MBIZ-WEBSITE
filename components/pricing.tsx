@@ -1,60 +1,80 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Check } from 'lucide-react'
 
 export function Pricing() {
+  const t = useTranslations('pricing')
+
   const plans = [
     {
-      name: 'Starter',
-      price: 'KES 999',
-      period: '/month',
-      description: 'Perfect for small shops just getting started',
+      name: t('six_month'),
+      price: t('six_month_price'),
+      period: t('six_month_period'),
+      monthlyRate: t('six_month_monthly'),
+      description: t('six_month_desc'),
+      savings: null,
       features: [
-        'Up to 1,000 products',
-        'Basic inventory tracking',
-        'Sales reports',
-        'Up to 500 customer profiles',
-        'Email support',
-        'Mobile app access'
+        t('unlimited_branches'),
+        t('full_features'),
+        t('email_support'),
+        t('mobile_access'),
+        t('basic_analytics')
       ],
-      cta: 'Start Free Trial',
+      cta: `${t('select_btn').replace('{plan}', t('six_month'))}`,
       highlighted: false
     },
     {
-      name: 'Professional',
-      price: 'KES 2,999',
-      period: '/month',
-      description: 'For growing businesses with multiple needs',
+      name: t('annual'),
+      price: t('annual_price'),
+      period: t('annual_period'),
+      monthlyRate: t('annual_monthly'),
+      description: t('annual_desc'),
+      savings: t('annual_savings'),
       features: [
-        'Unlimited products',
-        'Advanced analytics',
-        'Multi-location support',
-        'Unlimited customer profiles',
-        'Priority email & chat support',
-        'Mobile app access',
-        'Loyalty program',
-        'Staff management',
-        'Custom reports'
+        t('unlimited_branches'),
+        t('full_features'),
+        t('priority_support'),
+        t('mobile_access'),
+        t('advanced_analytics')
       ],
-      cta: 'Get Started',
+      cta: `${t('select_btn').replace('{plan}', t('annual'))}`,
+      highlighted: false
+    },
+    {
+      name: t('three_year'),
+      price: t('three_year_price'),
+      period: t('three_year_period'),
+      monthlyRate: t('three_year_monthly'),
+      description: t('three_year_desc'),
+      savings: t('three_year_savings'),
+      features: [
+        t('unlimited_branches'),
+        t('full_features'),
+        t('priority_support'),
+        t('mobile_access'),
+        t('advanced_analytics'),
+        t('dedicated_support')
+      ],
+      cta: `${t('select_btn').replace('{plan}', t('three_year'))}`,
       highlighted: true
     },
     {
-      name: 'Enterprise',
-      price: 'Custom',
-      period: 'pricing',
-      description: 'For large retailers with advanced needs',
+      name: t('enterprise'),
+      price: t('enterprise_price'),
+      period: '',
+      monthlyRate: '',
+      description: t('enterprise_desc'),
+      savings: null,
       features: [
-        'Everything in Professional',
-        'Advanced integrations',
-        'Dedicated account manager',
-        'Phone support',
-        'Custom features',
-        'API access',
-        'Training & onboarding',
-        'Multi-user teams'
+        t('multi_branch'),
+        t('automated_analytics'),
+        t('data_security'),
+        t('custom_deployment'),
+        t('dedicated_support'),
+        t('priority_support')
       ],
       cta: 'Contact Sales',
       highlighted: false
@@ -67,15 +87,15 @@ export function Pricing() {
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground text-balance">
-            Simple, Transparent Pricing
+            {t('title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose the plan that fits your business. Upgrade or downgrade anytime, no long-term contracts.
+            {t('description')}
           </p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
           {plans.map((plan, idx) => (
             <Card
               key={idx}
@@ -85,10 +105,10 @@ export function Pricing() {
                   : 'border-border bg-white hover:border-primary/30'
               }`}
             >
-              {plan.highlighted && (
+              {plan.savings && (
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
                   <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
-                    Most Popular
+                    {plan.savings}
                   </span>
                 </div>
               )}
@@ -110,15 +130,17 @@ export function Pricing() {
                     <span className="text-4xl font-bold text-foreground">
                       {plan.price}
                     </span>
-                    {plan.period !== 'pricing' && (
+                    {plan.period && (
                       <span className="text-muted-foreground">
                         {plan.period}
                       </span>
                     )}
                   </div>
-                  <p className="text-xs text-muted-foreground">
-                    First month free, then billed monthly
-                  </p>
+                  {plan.monthlyRate && (
+                    <p className="text-xs text-muted-foreground">
+                      ({plan.monthlyRate})
+                    </p>
+                  )}
                 </div>
 
                 {/* CTA Button */}

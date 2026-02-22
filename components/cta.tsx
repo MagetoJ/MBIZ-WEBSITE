@@ -1,10 +1,12 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useState } from 'react'
 
 export function CTA() {
+  const t = useTranslations('cta')
   const [email, setEmail] = useState('')
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -20,15 +22,15 @@ export function CTA() {
           {/* Main CTA */}
           <div className="text-center space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground text-balance">
-              Ready to Transform Your Business?
+              {t('title')}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Join thousands of Kenyan shop owners who are already using mBiz to manage their businesses more efficiently. Start your free trial today—no credit card required.
+              {t('description')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Start Your Free Trial
+                {t('cta_button')}
               </Button>
               <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary">
                 Schedule a Demo

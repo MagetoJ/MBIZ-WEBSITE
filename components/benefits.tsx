@@ -1,33 +1,36 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { Card } from '@/components/ui/card'
 import { CheckCircle2 } from 'lucide-react'
 
 export function Benefits() {
+  const t = useTranslations('benefits')
+
   const benefits = [
     {
-      title: 'Save Time',
-      description: 'Automate routine tasks and spend less time on paperwork. Focus on growing your business.'
+      title: t('easy_to_use'),
+      description: t('easy_to_use_desc')
     },
     {
-      title: 'Reduce Errors',
-      description: 'Eliminate manual mistakes with automated calculations and real-time inventory tracking.'
+      title: t('affordable'),
+      description: t('affordable_desc')
     },
     {
-      title: 'Increase Revenue',
-      description: 'Identify trends, optimize pricing, and make data-driven decisions to boost sales.'
+      title: t('support'),
+      description: t('support_desc')
     },
     {
-      title: 'Better Organization',
-      description: 'Keep everything organized in one place. No more scattered notes or lost records.'
+      title: t('growth'),
+      description: t('growth_desc')
     },
     {
-      title: 'Happy Customers',
-      description: 'Provide better service with quick checkouts, loyalty rewards, and personalized experience.'
+      title: t('secure'),
+      description: t('secure_desc')
     },
     {
-      title: 'Scale with Confidence',
-      description: 'Grow from one shop to multiple locations without losing control or visibility.'
+      title: t('offline'),
+      description: t('offline_desc')
     },
   ]
 
@@ -37,7 +40,7 @@ export function Benefits() {
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground text-balance">
-            Why Choose mBiz?
+            {t('title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Designed specifically for Kenyan shop owners to succeed in the modern marketplace.

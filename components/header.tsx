@@ -1,8 +1,12 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
+import { LanguageSwitcher } from '@/components/language-switcher'
 
 export function Header() {
+  const t = useTranslations()
+
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,23 +22,20 @@ export function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm text-foreground hover:text-primary transition-colors">
-              Features
-            </a>
-            <a href="#benefits" className="text-sm text-foreground hover:text-primary transition-colors">
-              Benefits
+              {t('nav.features')}
             </a>
             <a href="#pricing" className="text-sm text-foreground hover:text-primary transition-colors">
-              Pricing
-            </a>
-            <a href="#contact" className="text-sm text-foreground hover:text-primary transition-colors">
-              Contact
+              {t('nav.pricing')}
             </a>
           </nav>
 
-          {/* CTA Button */}
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Get Started
-          </Button>
+          {/* Right Section */}
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher />
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              Get Started
+            </Button>
+          </div>
         </div>
       </div>
     </header>

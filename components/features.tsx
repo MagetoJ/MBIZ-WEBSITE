@@ -1,39 +1,42 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { Card } from '@/components/ui/card'
 import { BarChart3, Users, Package, TrendingUp, Smartphone, Lock } from 'lucide-react'
 
 export function Features() {
+  const t = useTranslations('features')
+
   const features = [
     {
       icon: Package,
-      title: 'Smart Inventory',
-      description: 'Track stock levels in real-time, get low stock alerts, and manage multiple locations effortlessly.'
+      title: t('smart_inventory'),
+      description: t('smart_inventory_desc')
     },
     {
       icon: TrendingUp,
-      title: 'Sales Analytics',
-      description: 'Understand your sales patterns with detailed reports and insights to grow your business.'
+      title: t('sales_analytics'),
+      description: t('sales_analytics_desc')
     },
     {
       icon: Users,
-      title: 'Customer Management',
-      description: 'Build lasting relationships with customer profiles, purchase history, and loyalty tracking.'
+      title: t('customer_mgmt'),
+      description: t('customer_mgmt_desc')
     },
     {
       icon: BarChart3,
-      title: 'Financial Reports',
-      description: 'Generate comprehensive financial reports and manage invoicing with ease.'
+      title: t('financial_reports'),
+      description: t('financial_reports_desc')
     },
     {
       icon: Smartphone,
-      title: 'Mobile App',
-      description: 'Manage your shop from anywhere with our powerful iOS and Android applications.'
+      title: t('mobile_app'),
+      description: t('mobile_app_desc')
     },
     {
       icon: Lock,
-      title: 'Secure & Reliable',
-      description: 'Bank-level security ensures your business data is always safe and protected.'
+      title: t('secure_reliable'),
+      description: t('secure_reliable_desc')
     },
   ]
 
@@ -43,10 +46,10 @@ export function Features() {
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground text-balance">
-            Powerful Features for Modern Shops
+            {t('title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to run and grow your business in one intuitive platform.
+            {t('description')}
           </p>
         </div>
 
