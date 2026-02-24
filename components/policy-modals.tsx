@@ -8,7 +8,7 @@ import { ScrollArea } from '@/components/ui/scroll-area'
 export function PrivacyPolicyModal() {
   return (
     <a
-      href="https://statbricks.com/privacy"
+      href="https://mbizapp.com/privacy"
       target="_blank"
       rel="noopener noreferrer"
       className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
@@ -109,8 +109,8 @@ export function SecurityPolicyModal() {
             </div>
 
             <div>
-              <h3 className="font-bold mb-2">8. Contact Us</h3>
-              <p>For security concerns: <strong>security@mbizapp.com</strong></p>
+              <h3 className="font-bold mb-2">11. Contact Us</h3>
+              <p>For security concerns: <strong>support@mbizapp.com</strong></p>
             </div>
           </div>
         </ScrollArea>
@@ -177,10 +177,9 @@ export function TermsOfServiceModal() {
               <h3 className="font-bold mb-2">5. Subscription Plans & Billing</h3>
               <p><strong>Pricing:</strong></p>
               <ul className="list-disc pl-5 space-y-1">
-                <li>6-Month: KES 7,200 (KES 1,200/month)</li>
-                <li>Annual: KES 12,000 (KES 1,000/month)</li>
-                <li>3-Year: KES 30,000 (KES 833/month)</li>
-                <li>5-Year: KES 42,000 (KES 700/month)</li>
+                <li>6-Month: KES 9,000 (KES 1,500/month)</li>
+                <li>Annual: KES 16,000 (KES 1,333/month)</li>
+                <li>3-Year: KES 45,000 (KES 1,250/month)</li>
               </ul>
               <p className="mt-2"><strong>No refunds</strong> for partial periods or unused service. Prepaid plans cannot be refunded.</p>
             </div>
@@ -216,7 +215,7 @@ export function TermsOfServiceModal() {
 
             <div>
               <h3 className="font-bold mb-2">11. Contact Us</h3>
-              <p>For questions: <strong>legal@mbizapp.com</strong></p>
+              <p>For questions: <strong>support@mbizapp.com</strong></p>
             </div>
           </div>
         </ScrollArea>

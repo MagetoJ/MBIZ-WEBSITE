@@ -122,7 +122,7 @@ If you are in the EU/EEA, you have the right to:
 For privacy-related questions, requests, or complaints, please contact:
 
 **mBiz Privacy Team**
-Email: privacy@mbizapp.com
+Email: support@mbizapp.com
 Phone: +254 (0) 123 456 789
 Mailing Address: mBiz Ltd, Nairobi, Kenya
 

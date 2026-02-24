@@ -1,49 +1,46 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { Card } from '@/components/ui/card'
 import { CheckCircle2 } from 'lucide-react'
 
 export function Benefits() {
-  const t = useTranslations('benefits')
-
   const benefits = [
     {
-      title: t('easy_to_use'),
-      description: t('easy_to_use_desc')
+      title: 'Retail & Supermarkets',
+      description: 'Streamline checkout with POS, manage deep inventory, and prevent stock theft.'
     },
     {
-      title: t('affordable'),
-      description: t('affordable_desc')
+      title: 'Wholesale Distributors',
+      description: 'Full audit trails for stock movement and seamless branch management.'
     },
     {
-      title: t('support'),
-      description: t('support_desc')
+      title: 'Hardware & Pharmacies',
+      description: 'Track accurate stock levels with barcode scanning and manage customer credit.'
     },
     {
-      title: t('growth'),
-      description: t('growth_desc')
+      title: 'Hotels & Restaurants',
+      description: 'POS integration, expense tracking, and instant online storefront visibility.'
     },
     {
-      title: t('secure'),
-      description: t('secure_desc')
+      title: 'Boutiques & Fashion',
+      description: 'Showcase products with images and launch your online shop in minutes.'
     },
     {
-      title: t('offline'),
-      description: t('offline_desc')
+      title: 'Multi-Branch Businesses',
+      description: 'Centralized reporting with branch data separation for clear oversight.'
     },
   ]
 
   return (
-    <section id="benefits" className="w-full py-20 md:py-32 bg-secondary/10">
+    <section id="benefits" className="w-full py-20 md:py-32 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground text-balance">
-            {t('title')}
+            Who Is mBiz For?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Designed specifically for Kenyan shop owners to succeed in the modern marketplace.
+            Versatile enough for any SME, specialized enough for your unique business needs.
           </p>
         </div>
 

@@ -1,42 +1,39 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { Card } from '@/components/ui/card'
 import { BarChart3, Users, Package, TrendingUp, Smartphone, Lock } from 'lucide-react'
 
 export function Features() {
-  const t = useTranslations('features')
-
   const features = [
     {
       icon: Package,
-      title: t('smart_inventory'),
-      description: t('smart_inventory_desc')
+      title: 'Stop Stock Theft',
+      description: 'Full audit trails, barcode scanner integration, and role-based access to make theft hard to hide.'
     },
     {
       icon: TrendingUp,
-      title: t('sales_analytics'),
-      description: t('sales_analytics_desc')
-    },
-    {
-      icon: Users,
-      title: t('customer_mgmt'),
-      description: t('customer_mgmt_desc')
-    },
-    {
-      icon: BarChart3,
-      title: t('financial_reports'),
-      description: t('financial_reports_desc')
+      title: 'Sell Online Everywhere',
+      description: 'Activate your own branded shop and marketplace listing with a single toggle. No extra fees.'
     },
     {
       icon: Smartphone,
-      title: t('mobile_app'),
-      description: t('mobile_app_desc')
+      title: 'Monitor from Anywhere',
+      description: 'Real-time revenue, top products, and staff performance visible from your phone, anywhere.'
+    },
+    {
+      icon: BarChart3,
+      title: 'Save Time Every Day',
+      description: 'Replace slow, manual processes with barcode scanning, automated reporting, and digital receipts.'
+    },
+    {
+      icon: Users,
+      title: 'Customer Management',
+      description: 'Track purchase history, credit balances with due dates, and contact customers directly via WhatsApp.'
     },
     {
       icon: Lock,
-      title: t('secure_reliable'),
-      description: t('secure_reliable_desc')
+      title: 'Secure & Multi-Branch',
+      description: 'Role-based access, 2FA, and subdomain isolation for unlimited branches under one account.'
     },
   ]
 
@@ -46,10 +43,10 @@ export function Features() {
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground text-balance">
-            {t('title')}
+            Real Control for Growing Businesses
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t('description')}
+            mBiz replaces complexity with clarity, helping you run your business efficiently from day one.
           </p>
         </div>
 

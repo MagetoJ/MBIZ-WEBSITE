@@ -54,10 +54,9 @@ Violation of these terms may result in account suspension or termination.
 ## 5. Subscription Plans & Billing
 
 ### 5.1 Subscription Plans
-- **6-Month Plan**: KES 7,200 (KES 1,200/month equivalent)
-- **Annual Plan**: KES 12,000 (KES 1,000/month equivalent)
-- **3-Year Plan**: KES 30,000 (KES 833/month equivalent)
-- **5-Year Plan**: KES 42,000 (KES 700/month equivalent)
+- **6-Month Plan**: KES 9,000 (KES 1,500/month equivalent)
+- **Annual Plan**: KES 16,000 (KES 1,333/month equivalent)
+- **3-Year Plan**: KES 45,000 (KES 1,250/month equivalent)
 
 ### 5.2 Billing & Payment
 - Billing occurs on a recurring basis according to your selected plan
@@ -77,7 +76,7 @@ Violation of these terms may result in account suspension or termination.
 - You may cancel your subscription at any time
 - Cancellation takes effect at the end of your current billing period
 - **No refunds** for partial months or unused service
-- Prepaid subscriptions (3-Year, 5-Year) cannot be refunded
+- Prepaid subscriptions (Annual, 3-Year) cannot be refunded
 - Upon cancellation, your data is retained for 30 days before deletion
 
 ### 5.5 Price Changes
@@ -143,7 +142,7 @@ While we strive for 99.5% uptime, we do not guarantee:
 - Compatibility with all devices or browsers
 
 ### 8.3 Limitation of Liability
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, mBIZ SHALL NOT BE LIABLE FOR:
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, STATBRICKS SHALL NOT BE LIABLE FOR:
 - Indirect, incidental, consequential, or punitive damages
 - Loss of revenue, profits, data, or business opportunities
 - Damages arising from service interruptions or data loss
@@ -216,7 +215,7 @@ These Terms are governed by the laws of **Kenya**, without regard to conflict of
 ### 13.2 Jurisdiction
 You agree to submit to the exclusive jurisdiction of courts located in **Nairobi, Kenya** for any disputes.
 
-### 13.3 Dispute Resolution
+### 13.2 Dispute Resolution
 Before pursuing legal action, we encourage you to:
 1. Contact us at support@mbizapp.com
 2. Provide written description of the dispute
@@ -224,7 +223,7 @@ Before pursuing legal action, we encourage you to:
 
 If unresolved, disputes may be submitted to arbitration or courts as permitted by law.
 
-### 13.4 Class Action Waiver
+### 13.3 Class Action Waiver
 You agree that any legal proceedings shall be conducted on an individual basis, not as a class action or collective proceeding.
 
 ## 14. Export Compliance
@@ -286,7 +285,7 @@ Our failure to enforce any right or provision does not constitute a waiver of th
 For questions regarding these Terms:
 
 **mBiz Legal Team**
-Email: legal@mbizapp.com
+Email: support@mbizapp.com
 Phone: +254 (0) 123 456 789
 Mailing Address: mBiz Ltd, Nairobi, Kenya
 

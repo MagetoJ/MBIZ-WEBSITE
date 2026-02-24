@@ -1,11 +1,9 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { Facebook, Twitter, Linkedin, Mail } from 'lucide-react'
 import { PrivacyPolicyModal, SecurityPolicyModal, TermsOfServiceModal } from '@/components/policy-modals'
 
 export function Footer() {
-  const t = useTranslations('footer')
   const currentYear = new Date().getFullYear()
 
   return (
@@ -17,12 +15,12 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">m</span>
+                <span className="text-primary-foreground font-bold text-sm">S</span>
               </div>
               <span className="text-lg font-bold text-foreground">mBiz</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              {t('tagline')}
+              Smart Inventory & POS for Growing Businesses
             </p>
             <div className="flex gap-4 pt-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -42,26 +40,26 @@ export function Footer() {
 
           {/* Product */}
           <div className="space-y-4">
-            <h4 className="text-sm font-semibold text-foreground">{t('product')}</h4>
+            <h4 className="text-sm font-semibold text-foreground">Product</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {t('features')}
+                  Features
                 </a>
               </li>
               <li>
                 <a href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {t('pricing')}
+                  Pricing
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {t('security')}
+                  Security
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {t('roadmap')}
+                  Roadmap
                 </a>
               </li>
             </ul>
@@ -69,26 +67,26 @@ export function Footer() {
 
           {/* Company */}
           <div className="space-y-4">
-            <h4 className="text-sm font-semibold text-foreground">{t('company')}</h4>
+            <h4 className="text-sm font-semibold text-foreground">Company</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {t('about')}
+                  About
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {t('blog')}
+                  Blog
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {t('careers')}
+                  Careers
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {t('contact')}
+                  Contact
                 </a>
               </li>
             </ul>
@@ -96,7 +94,7 @@ export function Footer() {
 
           {/* Legal */}
           <div className="space-y-4">
-            <h4 className="text-sm font-semibold text-foreground">{t('legal')}</h4>
+            <h4 className="text-sm font-semibold text-foreground">Legal</h4>
             <ul className="space-y-2">
               <li>
                 <PrivacyPolicyModal />
@@ -109,7 +107,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {t('compliance')}
+                  Compliance
                 </a>
               </li>
             </ul>
@@ -119,17 +117,17 @@ export function Footer() {
         {/* Bottom Footer */}
         <div className="border-t border-border py-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            {t('copyright', { year: currentYear })}
+            © {currentYear} mBiz. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              {t('status')}
+              Status
             </a>
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              {t('support')}
+              Support
             </a>
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              {t('system_status')}
+              System Status
             </a>
           </div>
         </div>

@@ -1,12 +1,10 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useState } from 'react'
 
 export function CTA() {
-  const t = useTranslations('cta')
   const [email, setEmail] = useState('')
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -16,21 +14,21 @@ export function CTA() {
   }
 
   return (
-    <section id="contact" className="w-full py-20 md:py-32 bg-gradient-to-b from-secondary/10 to-background">
+    <section id="contact" className="w-full py-20 md:py-32 bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           {/* Main CTA */}
           <div className="text-center space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground text-balance">
-              {t('title')}
+              Ready to Transform Your Business?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              {t('description')}
+              Join thousands of entrepreneurs using mBiz to grow their businesses.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                {t('cta_button')}
+                Start Your Free Trial Today
               </Button>
               <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary">
                 Schedule a Demo

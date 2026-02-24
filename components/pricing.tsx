@@ -1,80 +1,76 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Check } from 'lucide-react'
 
 export function Pricing() {
-  const t = useTranslations('pricing')
-
   const plans = [
     {
-      name: t('six_month'),
-      price: t('six_month_price'),
-      period: t('six_month_period'),
-      monthlyRate: t('six_month_monthly'),
-      description: t('six_month_desc'),
+      name: '6-Month',
+      price: 'KES 9,000',
+      period: '/6 months',
+      monthlyRate: 'KES 1,500/mo',
+      description: 'Pay as you grow',
       savings: null,
       features: [
-        t('unlimited_branches'),
-        t('full_features'),
-        t('email_support'),
-        t('mobile_access'),
-        t('basic_analytics')
+        'Per branch pricing',
+        'Add unlimited staff',
+        'Full feature access',
+        'Email support',
+        'Mobile app access'
       ],
-      cta: `${t('select_btn').replace('{plan}', t('six_month'))}`,
+      cta: 'Select 6-Month',
       highlighted: false
     },
     {
-      name: t('annual'),
-      price: t('annual_price'),
-      period: t('annual_period'),
-      monthlyRate: t('annual_monthly'),
-      description: t('annual_desc'),
-      savings: t('annual_savings'),
+      name: 'Annual',
+      price: 'KES 16,000',
+      period: '/year',
+      monthlyRate: 'KES 1,333/mo',
+      description: 'Save KES 2,000 vs shorter plans',
+      savings: 'SAVE KES 2,000',
       features: [
-        t('unlimited_branches'),
-        t('full_features'),
-        t('priority_support'),
-        t('mobile_access'),
-        t('advanced_analytics')
+        'Per branch pricing',
+        'Add unlimited staff',
+        'Full feature access',
+        'Priority email & chat support',
+        'Mobile app access'
       ],
-      cta: `${t('select_btn').replace('{plan}', t('annual'))}`,
+      cta: 'Select Annual',
       highlighted: false
     },
     {
-      name: t('three_year'),
-      price: t('three_year_price'),
-      period: t('three_year_period'),
-      monthlyRate: t('three_year_monthly'),
-      description: t('three_year_desc'),
-      savings: t('three_year_savings'),
+      name: '3-Year',
+      price: 'KES 45,000',
+      period: '/3 years',
+      monthlyRate: 'KES 1,250/mo',
+      description: 'Save KES 9,000 vs shorter plans',
+      savings: 'SAVE KES 9,000',
       features: [
-        t('unlimited_branches'),
-        t('full_features'),
-        t('priority_support'),
-        t('mobile_access'),
-        t('advanced_analytics'),
-        t('dedicated_support')
+        'Per branch pricing',
+        'Add unlimited staff',
+        'Full feature access',
+        'Priority email & chat support',
+        'Mobile app access',
+        'Dedicated support'
       ],
-      cta: `${t('select_btn').replace('{plan}', t('three_year'))}`,
+      cta: 'Select 3-Year',
       highlighted: true
     },
     {
-      name: t('enterprise'),
-      price: t('enterprise_price'),
+      name: 'Enterprise',
+      price: 'Custom pricing',
       period: '',
       monthlyRate: '',
-      description: t('enterprise_desc'),
+      description: 'Tailored to your needs',
       savings: null,
       features: [
-        t('multi_branch'),
-        t('automated_analytics'),
-        t('data_security'),
-        t('custom_deployment'),
-        t('dedicated_support'),
-        t('priority_support')
+        'Custom on-premise installation',
+        'Full data ownership',
+        'Custom deployment',
+        'Handover training',
+        'Priority email & chat support'
       ],
       cta: 'Contact Sales',
       highlighted: false
@@ -87,10 +83,10 @@ export function Pricing() {
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground text-balance">
-            {t('title')}
+            Pricing per Branch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t('description')}
+            mBiz is priced per branch, not per user. Add as many staff as your business needs — you only pay for the locations you run.
           </p>
         </div>
 

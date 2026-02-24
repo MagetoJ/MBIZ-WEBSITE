@@ -145,7 +145,7 @@ mBiz complies with the following standards and regulations:
 We encourage responsible disclosure of security vulnerabilities. If you discover a vulnerability, please:
 
 1. **Do NOT** publicly disclose the vulnerability
-2. Email security@mbizapp.com with details
+2. Email support@mbizapp.com with details
 3. Include proof-of-concept if possible
 4. Allow us 30 days to address before disclosure
 
@@ -207,12 +207,12 @@ This Security Policy is reviewed and updated annually or when significant change
 For security-related questions or concerns:
 
 **mBiz Security Team**
-Email: security@mbizapp.com
+Email: support@mbizapp.com
 Phone: +254 (0) 123 456 789
 GPG Key: Available upon request
 
 For responsible vulnerability disclosure:
-Email: security@mbizapp.com
+Email: support@mbizapp.com
 Subject: "SECURITY VULNERABILITY REPORT"
 
 ---
