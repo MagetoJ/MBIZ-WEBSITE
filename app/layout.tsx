@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'mBiz - Smart Inventory & POS for Growing Businesses',
   description: 'Built for small and medium enterprises that want real control over their business.',
   icons: {
-    icon: '/android-chrome-192x192.png',
+    icon: '/android-chrome-512x512.png',
     apple: '/apple-touch-icon.png',
   },
 }

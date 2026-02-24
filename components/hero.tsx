@@ -3,8 +3,12 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
+import { useParams } from 'next/navigation'
 
 export function Hero() {
+  const params = useParams()
+  const locale = params?.locale || 'en'
+
   return (
     <section className="w-full py-20 md:py-32 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,9 +64,9 @@ export function Hero() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-transparent rounded-2xl"></div>
             <div className="absolute inset-4 bg-white/50 rounded-xl backdrop-blur-sm flex items-center justify-center">
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                  <div className="w-8 h-8 bg-primary rounded-lg"></div>
-                </div>
+                <Link href={`/${locale}`} className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4 hover:opacity-80 transition-opacity">
+                  <img src="/android-chrome-512x512.png" alt="mBiz Logo" className="w-8 h-8 object-contain rounded-lg" />
+                </Link>
                 <p className="text-sm text-muted-foreground">Dashboard Preview</p>
               </div>
             </div>

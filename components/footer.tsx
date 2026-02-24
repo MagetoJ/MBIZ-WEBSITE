@@ -17,12 +17,12 @@ export function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">m</span>
+            <Link href={`/${locale}`} className="flex items-center gap-2 hover:opacity-80 transition-opacity inline-flex">
+              <div className="w-8 h-8 relative">
+                <img src="/android-chrome-512x512.png" alt="mBiz Logo" className="w-full h-full object-contain rounded-lg" />
               </div>
               <span className="text-lg font-bold text-foreground">mBiz</span>
-            </div>
+            </Link>
             <p className="text-sm text-muted-foreground">
               Smart Inventory & POS for Growing Businesses
             </p>
