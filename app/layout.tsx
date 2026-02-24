@@ -10,6 +10,10 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'mBiz - Smart Inventory & POS for Growing Businesses',
   description: 'Built for small and medium enterprises that want real control over their business.',
+  icons: {
+    icon: '/android-chrome-192x192.png',
+    apple: '/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({
@@ -20,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           {children}
         </ThemeProvider>
         <Analytics />

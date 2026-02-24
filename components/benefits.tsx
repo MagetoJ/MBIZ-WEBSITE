@@ -7,27 +7,27 @@ export function Benefits() {
   const benefits = [
     {
       title: 'Retail & Supermarkets',
-      description: 'Streamline checkout with POS, manage deep inventory, and prevent stock theft.'
+      description: 'Streamline checkout with POS, manage deep inventory, and prevent stock theft with full audit trails.'
     },
     {
       title: 'Wholesale Distributors',
-      description: 'Full audit trails for stock movement and seamless branch management.'
+      description: 'Full audit trails for stock movement and seamless branch management with centralized oversight.'
     },
     {
       title: 'Hardware & Pharmacies',
-      description: 'Track accurate stock levels with barcode scanning and manage customer credit.'
+      description: 'Track accurate stock levels with barcode scanning and manage customer credit balances effectively.'
     },
     {
       title: 'Hotels & Restaurants',
-      description: 'POS integration, expense tracking, and instant online storefront visibility.'
+      description: 'POS integration, expense tracking, and instant online storefront visibility for bookings and orders.'
     },
     {
       title: 'Boutiques & Fashion',
-      description: 'Showcase products with images and launch your online shop in minutes.'
+      description: 'Showcase products with high-quality images and launch your branded online shop in minutes.'
     },
     {
       title: 'Multi-Branch Businesses',
-      description: 'Centralized reporting with branch data separation for clear oversight.'
+      description: 'Centralized reporting with strict branch data separation for clear oversight from any device.'
     },
   ]
 

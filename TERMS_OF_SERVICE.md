@@ -142,7 +142,7 @@ While we strive for 99.5% uptime, we do not guarantee:
 - Compatibility with all devices or browsers
 
 ### 8.3 Limitation of Liability
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, STATBRICKS SHALL NOT BE LIABLE FOR:
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, mBiz SHALL NOT BE LIABLE FOR:
 - Indirect, incidental, consequential, or punitive damages
 - Loss of revenue, profits, data, or business opportunities
 - Damages arising from service interruptions or data loss

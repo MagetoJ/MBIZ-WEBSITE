@@ -1,10 +1,14 @@
 'use client'
 
 import { Facebook, Twitter, Linkedin, Mail } from 'lucide-react'
+import Link from 'next/link'
+import { useParams } from 'next/navigation'
 import { PrivacyPolicyModal, SecurityPolicyModal, TermsOfServiceModal } from '@/components/policy-modals'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
+  const params = useParams()
+  const locale = params?.locale || 'en'
 
   return (
     <footer className="w-full bg-foreground/5 border-t border-border">
@@ -15,7 +19,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">S</span>
+                <span className="text-primary-foreground font-bold text-sm">m</span>
               </div>
               <span className="text-lg font-bold text-foreground">mBiz</span>
             </div>
@@ -53,14 +57,14 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href={`/${locale}/security`} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Security
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href={`/${locale}/roadmap`} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Roadmap
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

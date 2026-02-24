@@ -8,22 +8,22 @@ export function Features() {
     {
       icon: Package,
       title: 'Stop Stock Theft',
-      description: 'Full audit trails, barcode scanner integration, and role-based access to make theft hard to hide.'
+      description: 'Full audit trails, barcode scanner integration, and role-based access to make theft hard to hide. If your staff knows every movement is logged, most theft stops before it starts.'
     },
     {
       icon: TrendingUp,
       title: 'Sell Online Everywhere',
-      description: 'Activate your own branded shop and marketplace listing with a single toggle. No extra fees.'
+      description: 'Activate your own branded shop and marketplace listing with a single toggle. No extra fees. Reach more customers finding you without third-party platform cuts.'
     },
     {
       icon: Smartphone,
       title: 'Monitor from Anywhere',
-      description: 'Real-time revenue, top products, and staff performance visible from your phone, anywhere.'
+      description: 'Real-time revenue, top products, and staff performance visible from your phone, anywhere. Multi-branch visibility and custom reports at your fingertips.'
     },
     {
       icon: BarChart3,
       title: 'Save Time Every Day',
-      description: 'Replace slow, manual processes with barcode scanning, automated reporting, and digital receipts.'
+      description: 'Replace slow, manual processes with barcode scanning, automated reporting, and digital receipts. POS workflows designed to save time at the counter.'
     },
     {
       icon: Users,
