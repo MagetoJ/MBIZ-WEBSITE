@@ -54,9 +54,9 @@ Violation of these terms may result in account suspension or termination.
 ## 5. Subscription Plans & Billing
 
 ### 5.1 Subscription Plans
-- **6-Month Plan**: KES 9,000 (KES 1,500/month equivalent)
-- **Annual Plan**: KES 16,000 (KES 1,333/month equivalent)
-- **3-Year Plan**: KES 45,000 (KES 1,250/month equivalent)
+- **3-Month Plan**: KES 10,500 (KES 3,500/month equivalent)
+- **6-Month Plan**: KES 18,000 (KES 3,000/month equivalent)
+- **Annual Plan**: KES 30,000 (KES 2,500/month equivalent)
 
 ### 5.2 Billing & Payment
 - Billing occurs on a recurring basis according to your selected plan

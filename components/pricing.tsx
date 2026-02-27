@@ -7,55 +7,51 @@ import { Check } from 'lucide-react'
 export function Pricing() {
   const plans = [
     {
-      name: '6-Month',
-      price: 'KES 9,000',
-      period: '/6 months',
-      monthlyRate: 'KES 1,500/mo',
-      description: 'Pay as you grow',
+      name: '3-Month',
+      price: 'KES 10,500',
+      period: '/3 months',
+      monthlyRate: 'KES 3,500/mo',
+      description: '2 branches included free',
       savings: null,
       features: [
-        'Per branch pricing',
-        'Add unlimited staff',
-        'Full feature access',
-        'Email support',
-        'Mobile app access'
+        '2 branches included free',
+        'Automated analytics',
+        'Data security & backup',
+        'And more'
+      ],
+      cta: 'Select 3-Month',
+      highlighted: false
+    },
+    {
+      name: '6-Month',
+      price: 'KES 18,000',
+      period: '/6 months',
+      monthlyRate: 'KES 3,000/mo',
+      description: 'Save KES 3,000 vs shorter plans',
+      savings: 'SAVE KES 3,000',
+      features: [
+        '2 branches included free',
+        'Automated analytics',
+        'Data security & backup',
+        'And more'
       ],
       cta: 'Select 6-Month',
       highlighted: false
     },
     {
       name: 'Annual',
-      price: 'KES 16,000',
+      price: 'KES 30,000',
       period: '/year',
-      monthlyRate: 'KES 1,333/mo',
-      description: 'Save KES 2,000 vs shorter plans',
-      savings: 'SAVE KES 2,000',
+      monthlyRate: 'KES 2,500/mo',
+      description: 'Save KES 6,000 vs shorter plans',
+      savings: 'SAVE KES 6,000',
       features: [
-        'Per branch pricing',
-        'Add unlimited staff',
-        'Full feature access',
-        'Priority email & chat support',
-        'Mobile app access'
+        '2 branches included free',
+        'Automated analytics',
+        'Data security & backup',
+        'And more'
       ],
       cta: 'Select Annual',
-      highlighted: false
-    },
-    {
-      name: '3-Year',
-      price: 'KES 45,000',
-      period: '/3 years',
-      monthlyRate: 'KES 1,250/mo',
-      description: 'Save KES 9,000 vs shorter plans',
-      savings: 'SAVE KES 9,000',
-      features: [
-        'Per branch pricing',
-        'Add unlimited staff',
-        'Full feature access',
-        'Priority email & chat support',
-        'Mobile app access',
-        'Dedicated support'
-      ],
-      cta: 'Select 3-Year',
       highlighted: true
     },
     {
@@ -66,13 +62,13 @@ export function Pricing() {
       description: 'Tailored to your needs',
       savings: null,
       features: [
-        'Custom on-premise installation',
-        'Full data ownership',
+        'Multi-branch support',
+        'Automated analytics',
+        'Data security & backup',
         'Custom deployment',
-        'Handover training',
-        'Priority email & chat support'
+        'Dedicated support'
       ],
-      cta: 'Contact Sales',
+      cta: 'Custom pricing',
       highlighted: false
     },
   ]
@@ -120,23 +116,25 @@ export function Pricing() {
                   </p>
                 </div>
 
-                {/* Price */}
-                <div className="space-y-1">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-4xl font-bold text-foreground">
-                      {plan.price}
-                    </span>
-                    {plan.period && (
-                      <span className="text-muted-foreground">
-                        {plan.period}
+                {/* Price Box */}
+                <div className="bg-primary p-6 rounded-xl text-primary-foreground shadow-inner -mx-2">
+                  <div className="space-y-1 text-center">
+                    <div className="flex items-baseline justify-center gap-1">
+                      <span className="text-3xl font-bold">
+                        {plan.price}
                       </span>
+                      {plan.period && (
+                        <span className="text-primary-foreground/80 text-sm">
+                          {plan.period}
+                        </span>
+                      )}
+                    </div>
+                    {plan.monthlyRate && (
+                      <p className="text-xs text-primary-foreground/90 font-medium">
+                        ({plan.monthlyRate})
+                      </p>
                     )}
                   </div>
-                  {plan.monthlyRate && (
-                    <p className="text-xs text-muted-foreground">
-                      ({plan.monthlyRate})
-                    </p>
-                  )}
                 </div>
 
                 {/* CTA Button */}

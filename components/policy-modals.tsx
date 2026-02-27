@@ -177,9 +177,9 @@ export function TermsOfServiceModal() {
               <h3 className="font-bold mb-2">5. Subscription Plans & Billing</h3>
               <p><strong>Pricing:</strong></p>
               <ul className="list-disc pl-5 space-y-1">
-                <li>6-Month: KES 9,000 (KES 1,500/month)</li>
-                <li>Annual: KES 16,000 (KES 1,333/month)</li>
-                <li>3-Year: KES 45,000 (KES 1,250/month)</li>
+                <li>3-Month: KES 10,500 (KES 3,500/month)</li>
+                <li>6-Month: KES 18,000 (KES 3,000/month)</li>
+                <li>Annual: KES 30,000 (KES 2,500/month)</li>
               </ul>
               <p className="mt-2"><strong>No refunds</strong> for partial periods or unused service. Prepaid plans cannot be refunded.</p>
             </div>
