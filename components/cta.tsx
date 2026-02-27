@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useState } from 'react'
+import Link from 'next/link'
 
 export function CTA() {
   const [email, setEmail] = useState('')
@@ -26,13 +27,25 @@ export function CTA() {
               Join thousands of entrepreneurs using mBiz to grow their businesses.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Start Your Free Trial Today
-              </Button>
-              <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary">
-                Schedule a Demo
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 items-center">
+              <Link href="https://mbizapp.com/register">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  Start Your Free Trial Today
+                </Button>
+              </Link>
+              <div className="flex gap-4">
+                <a href="#features" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                  Features
+                </a>
+                <span className="text-border">|</span>
+                <a href="#pricing" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                  Pricing
+                </a>
+                <span className="text-border">|</span>
+                <button className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                  Schedule a Demo
+                </button>
+              </div>
             </div>
           </div>
 
@@ -43,6 +56,7 @@ export function CTA() {
                 <h3 className="text-2xl font-bold text-foreground">
                   Stay Updated
                 </h3>
+                
                 <p className="text-muted-foreground">
                   Get exclusive tips, updates, and special offers delivered to your inbox.
                 </p>
@@ -66,7 +80,7 @@ export function CTA() {
               </form>
 
               <p className="text-xs text-muted-foreground text-center">
-                We respect your privacy. Unsubscribe at any time.
+                We respect your <a href="https://statbricks.com/privacy" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">privacy</a>. Unsubscribe at any time.
               </p>
             </div>
           </div>

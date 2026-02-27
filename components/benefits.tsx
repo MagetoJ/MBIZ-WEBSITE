@@ -15,7 +15,7 @@ export function Benefits() {
     },
     {
       title: 'Hardware & Pharmacies',
-      description: 'Track accurate stock levels with barcode scanning and manage customer credit balances effectively.'
+      description: 'Specialized POS for pharmacies with batch tracking and expiry alerts. Track accurate stock levels and manage customer credit.'
     },
     {
       title: 'Hotels & Restaurants',

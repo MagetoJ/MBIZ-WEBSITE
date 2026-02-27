@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Check } from 'lucide-react'
+import Link from 'next/link'
 
 export function Pricing() {
   const plans = [
@@ -138,16 +139,18 @@ export function Pricing() {
                 </div>
 
                 {/* CTA Button */}
-                <Button
-                  className={`w-full ${
-                    plan.highlighted
-                      ? 'bg-primary hover:bg-primary/90 text-primary-foreground'
-                      : 'border border-border text-foreground hover:bg-secondary'
-                  }`}
-                  variant={plan.highlighted ? 'default' : 'outline'}
-                >
-                  {plan.cta}
-                </Button>
+                <Link href="https://mbizapp.com/register" className="w-full">
+                  <Button
+                    className={`w-full ${
+                      plan.highlighted
+                        ? 'bg-primary hover:bg-primary/90 text-primary-foreground'
+                        : 'border border-border text-foreground hover:bg-secondary'
+                    }`}
+                    variant={plan.highlighted ? 'default' : 'outline'}
+                  >
+                    {plan.cta}
+                  </Button>
+                </Link>
 
                 {/* Features */}
                 <div className="space-y-3 pt-6 border-t border-border">

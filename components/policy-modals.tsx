@@ -8,7 +8,7 @@ import { ScrollArea } from '@/components/ui/scroll-area'
 export function PrivacyPolicyModal() {
   return (
     <a
-      href="https://mbizapp.com/privacy"
+      href="https://statbricks.com/privacy"
       target="_blank"
       rel="noopener noreferrer"
       className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"

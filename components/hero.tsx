@@ -28,16 +28,26 @@ export function Hero() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 items-center">
               <Link href="https://mbizapp.com/register">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                   Start Free Trial
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary">
-                Watch Demo
-              </Button>
+              <div className="flex gap-4">
+                <a href="#features" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                  Features
+                </a>
+                <span className="text-border">|</span>
+                <a href="#pricing" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                  Pricing
+                </a>
+                <span className="text-border">|</span>
+                <button className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                  Watch Demo
+                </button>
+              </div>
             </div>
 
             {/* Trust Indicators */}

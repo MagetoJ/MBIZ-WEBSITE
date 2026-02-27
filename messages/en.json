@@ -31,7 +31,9 @@
     "customer_mgmt": "Customer Management",
     "customer_mgmt_desc": "Track purchase history, credit balances with due dates, and contact customers directly via WhatsApp.",
     "secure_multi": "Secure & Multi-Branch",
-    "secure_multi_desc": "Role-based access, 2FA, and subdomain isolation for unlimited branches under one account."
+    "secure_multi_desc": "Role-based access, 2FA, and subdomain isolation for unlimited branches under one account.",
+    "pharmacy": "Pharmacy Management",
+    "pharmacy_desc": "Specialized tools for pharmacies, including expiry tracking, batch management, and prescription history."
   },
   "pricing": {
     "title": "Pricing Plans",
@@ -102,9 +104,9 @@
     "about": "About Us",
     "blog": "Blog",
     "careers": "Careers",
-    "contact": "Contact",
+    "contact": "Contact - StatBricks",
     "legal": "Legal",
-    "privacy": "Privacy Policy",
+    "privacy": "Privacy Policy - StatBricks",
     "terms": "Terms of Service",
     "compliance": "Compliance",
     "status": "Status",

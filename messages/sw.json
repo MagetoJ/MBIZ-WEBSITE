@@ -31,7 +31,9 @@
     "customer_mgmt": "Usimamizi wa Wateja",
     "customer_mgmt_desc": "Fuatilia historia ya ununuzi, salio la mkopo na tarehe za malipo, na wasiliana na wateja moja kwa moja kupitia WhatsApp.",
     "secure_multi": "Salama & Matawi Mengi",
-    "secure_multi_desc": "Udhibiti wa majukumu, 2FA, na kutengwa kwa data kwa matawi yasiyo na kikomo chini ya akaunti moja."
+    "secure_multi_desc": "Udhibiti wa majukumu, 2FA, na kutengwa kwa data kwa matawi yasiyo na kikomo chini ya akaunti moja.",
+    "pharmacy": "Usimamizi wa Famasi",
+    "pharmacy_desc": "Zana maalum kwa ajili ya famasi, ikiwa ni pamoja na ufuatiliaji wa tarehe za mwisho wa matumizi, usimamizi wa makundi (batch management), na historia ya maagizo ya daktari."
   },
   "pricing": {
     "title": "Bei kwa kila Tawi",
@@ -102,9 +104,9 @@
     "about": "Kuhusu Sisi",
     "blog": "Blogi",
     "careers": "Nafasi za Kazi",
-    "contact": "Wasiliana",
+    "contact": "Wasiliana - StatBricks",
     "legal": "Kisheria",
-    "privacy": "Sera ya Faragha",
+    "privacy": "Privacy Policy - StatBricks",
     "terms": "Masharti ya Huduma",
     "compliance": "Kufuata Sheria",
     "status": "Hali",

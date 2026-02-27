@@ -89,9 +89,10 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://statbricks.com/#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors block">
                   Contact
                 </a>
+              
               </li>
             </ul>
           </div>
@@ -109,11 +110,7 @@ export function Footer() {
               <li>
                 <SecurityPolicyModal />
               </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Compliance
-                </a>
-              </li>
+            
             </ul>
           </div>
         </div>

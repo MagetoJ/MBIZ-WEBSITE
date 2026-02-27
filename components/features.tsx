@@ -1,7 +1,7 @@
 'use client'
 
 import { Card } from '@/components/ui/card'
-import { BarChart3, Users, Package, TrendingUp, Smartphone, Lock } from 'lucide-react'
+import { BarChart3, Users, Package, TrendingUp, Smartphone, Lock, Stethoscope } from 'lucide-react'
 
 export function Features() {
   const features = [
@@ -14,6 +14,11 @@ export function Features() {
       icon: TrendingUp,
       title: 'Sell Online Everywhere',
       description: 'Activate your own branded shop and marketplace listing with a single toggle. No extra fees. Reach more customers finding you without third-party platform cuts.'
+    },
+    {
+      icon: Stethoscope,
+      title: 'Pharmacy Management',
+      description: 'Specialized tools for pharmacies, including expiry tracking, batch management, and prescription history. Stay compliant and ensure patient safety.'
     },
     {
       icon: Smartphone,
