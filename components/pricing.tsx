@@ -139,7 +139,7 @@ export function Pricing() {
                 </div>
 
                 {/* CTA Button */}
-                <Link href="https://mbizapp.com/register" className="w-full">
+                <Link href="https://web.mbizapp.com/register" className="w-full">
                   <Button
                     className={`w-full ${
                       plan.highlighted

@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, TrendingUp } from 'lucide-react'
 import { useParams } from 'next/navigation'
 
 export function Hero() {
@@ -29,7 +29,7 @@ export function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 items-center">
-              <Link href="https://mbizapp.com/register">
+              <Link href="https://web.mbizapp.com/register">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                   Start Free Trial
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -70,14 +70,29 @@ export function Hero() {
           </div>
 
           {/* Right Image Area */}
-          <div className="relative h-96 md:h-full min-h-[400px]">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-transparent rounded-2xl"></div>
-            <div className="absolute inset-4 bg-white/50 rounded-xl backdrop-blur-sm flex items-center justify-center">
-              <div className="text-center">
-                <Link href={`/${locale}`} className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4 hover:opacity-80 transition-opacity">
-                  <img src="/android-chrome-512x512.png" alt="mBiz Logo" className="w-8 h-8 object-contain rounded-lg" />
-                </Link>
-                <p className="text-sm text-muted-foreground">Dashboard Preview</p>
+          <div className="relative h-[400px] md:h-[500px] w-full group">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-transparent rounded-2xl -rotate-1 group-hover:rotate-0 transition-transform duration-500"></div>
+            <div className="absolute inset-2 bg-white border border-border rounded-xl shadow-2xl overflow-hidden rotate-1 group-hover:rotate-0 transition-transform duration-500">
+              <div className="w-full h-full relative">
+                <img 
+                  src="/dashboard-preview.png" 
+                  alt="mBiz Dashboard Preview" 
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+              </div>
+            </div>
+            
+            {/* Floating Badge */}
+            <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-lg shadow-xl border border-border animate-bounce-slow">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                  <TrendingUp className="w-5 h-5 text-green-600" />
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground font-medium">Real-time Revenue</p>
+                  <p className="text-sm font-bold text-foreground">Tracked Live</p>
+                </div>
               </div>
             </div>
           </div>

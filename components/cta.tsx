@@ -28,7 +28,7 @@ export function CTA() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 items-center">
-              <Link href="https://mbizapp.com/register">
+              <Link href="https://web.mbizapp.com/register">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                   Start Your Free Trial Today
                 </Button>
